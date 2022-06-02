@@ -10,7 +10,8 @@ Requirements
 composer install
 ```
 
-2. configure your Credentials .json
+2. configure your credentials for google sheets API
+credentials-google-sheets.json
 
 ```shell
 {
@@ -26,3 +27,4 @@ composer install
   "client_x509_cert_url": ""
 }
 ```
+
