@@ -16,4 +16,8 @@ It's super easy to get Hydra up and running.
 git clone https://github.com/igor4949i/parselizer.git
 ```
 
-2. 
+2. install composer
+
+```shell
+composer require google/apiclient:^2.0
+```
