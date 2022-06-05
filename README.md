@@ -16,7 +16,7 @@ It's super easy to get Parselizer up and running.
 git clone https://github.com/igor4949i/parselizer.git
 ```
 
-# Known issue
+## Known issue
 
 Warning: count(): Parameter must be an array or an object that implements Countable in 
 
