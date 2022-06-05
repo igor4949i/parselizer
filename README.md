@@ -8,10 +8,22 @@ This is a tool for parsing sites.
 
 ## Getting Started
 
-It's super easy to get Hydra up and running.
+It's super easy to get Parselizer up and running.
 
 1. clone the project
 
 ```shell
 git clone https://github.com/igor4949i/parselizer.git
 ```
+
+# Known issue
+
+Warning: count(): Parameter must be an array or an object that implements Countable in 
+
+Simple fix.
+
+```shell
+if (count($this->handles) >= $this->maxHandles)
+if ( $this->handles != null && count($this->handles) >= $this->maxHandles )
+```
+https://github.com/guzzle/guzzle/issues/1973
