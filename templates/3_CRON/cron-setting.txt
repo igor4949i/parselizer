@@ -1,0 +1,4 @@
+*/1 * * * *
+
+%progdir%\modules\wget\bin\wget.exe -q --no-cache http://php-parser-projects/list-projectsindex.php
+
