@@ -8,6 +8,25 @@ require('./phpQuery-onefile.php');
 // echo $debug->debug("Start");
 // $start = microtime(true);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // get data from MAIN.JS -- $.post
 $url_category = $_POST['parser_data'];
 
@@ -41,7 +60,7 @@ function category_url_product($url_category) {
   // check the next page
   if ($next) {
     $url_category = 'https://prom.ua'.$next;
-    category_url_product($url_category);
+    // category_url_product($url_category);
   }
 }
 
