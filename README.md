@@ -21,6 +21,7 @@ git clone https://github.com/igor4949i/parselizer.git
 Warning: count(): Parameter must be an array or an object that implements Countable in 
 
 Simple fix.
+https://github.com/guzzle/guzzle/issues/1973#issuecomment-396278571
 
 ```shell
 if (count($this->handles) >= $this->maxHandles)
