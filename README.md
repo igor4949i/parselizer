@@ -6,6 +6,14 @@
 
 This is a tool for parsing sites.
 
+## Features
+- Upload data to Google Sheets
+- Send data to DB (MySQL)
+- Downlod file from AWS and upload via FTP
+- Generate HTML file and save data to local Excel
+- Downloading images
+- Configuration CRON
+
 ## Getting Started
 
 It's super easy to get Parselizer up and running.
@@ -27,4 +35,3 @@ Simple fix.
 if (count($this->handles) >= $this->maxHandles)
 if ( $this->handles != null && count($this->handles) >= $this->maxHandles )
 ```
-https://github.com/guzzle/guzzle/issues/1973
