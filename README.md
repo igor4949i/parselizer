@@ -7,10 +7,10 @@
 This is a tool for parsing sites.
 
 ## Features
-- Upload data to Google Sheets
-- Send data to DB (MySQL)
-- Downlod file from AWS and upload via FTP
-- Generate HTML file and save data to local Excel
+- Uploading data to Google Sheets
+- Sending data to database (MySQL)
+- Downloding file from AWS and uploading via FTP
+- Generating HTML file and saving data to local Excel
 - Downloading images
 - Configuration CRON
 
@@ -23,6 +23,9 @@ It's super easy to get Parselizer up and running.
 ```shell
 git clone https://github.com/igor4949i/parselizer.git
 ```
+
+2. create a copy of the desired project and connect phpQuery library
+[phpQuery](https://code.google.com/archive/p/phpquery/)
 
 ## Known issue
 
