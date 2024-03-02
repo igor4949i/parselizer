@@ -1,6 +1,6 @@
 <?php
 
-$host = 'localhost'; // host name
-$db = 'bookdb'; // database name
+$host = 'localhost';
+$db = 'bookdb';
 $user = 'root';
 $password = 'root';

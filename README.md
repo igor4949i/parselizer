@@ -27,9 +27,13 @@ git clone https://github.com/igor4949i/parselizer.git
 2. create a copy of the desired project and connect phpQuery library
 [phpQuery](https://code.google.com/archive/p/phpquery/)
 
-## Known issue
+3. configure the required data for parsing
 
-Warning: count(): Parameter must be an array or an object that implements Countable in 
+4. run the server and open index.html
+
+## Known bugs
+
+==Warning:== count(): Parameter must be an array or an object that implements Countable in 
 
 Simple fix.
 [Check this comment](https://github.com/guzzle/guzzle/issues/1973#issuecomment-396278571)

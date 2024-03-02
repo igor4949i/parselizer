@@ -1,6 +1,6 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
-require  __DIR__ . '/phpQuery-onefile.php';
+require __DIR__ . '/phpQuery-onefile.php';
 
 $id_product = 1;
 $values_google_sheets = [];
@@ -22,7 +22,7 @@ function category_url_product($url_category)
   foreach ($breadcrumbs as $item) {
     $item = pq($item);
     $item = $item->text();
-    if($item && $item !== 'Каталог продукции') {
+    if ($item && $item !== 'Каталог продукции') {
       $breadcrumbs_arr[] = $item;
     }
   }
@@ -34,7 +34,7 @@ function category_url_product($url_category)
 
     $product_data[] = $id_product;
     $product_data[] = $breadcrumbs_str;
-   
+
     $description = $item->find('.polezn_info .opisnie_tov')->text();
 
     $table_prod = $item->find('.polezn_info > table');
@@ -44,17 +44,17 @@ function category_url_product($url_category)
     $product_data[] = $description;
 
     $url_image = $item->find('.polezn_info img')->attr('src');
-    
+
     saveImg($url_image, $id_product);
-    
+
     $img_name = preg_replace('/.*\//', '', $url_image);
-    
-    if (!is_dir('images/'.$id_product)) {
-      mkdir('images/'.$id_product, 0777, true);
+
+    if (!is_dir('images/' . $id_product)) {
+      mkdir('images/' . $id_product, 0777, true);
     }
     // Image path
-    $img_name = 'images/'.$id_product.'/'.$img_name;
-    
+    $img_name = 'images/' . $id_product . '/' . $img_name;
+
     $product_data[] = $img_name;
 
     $id_product = $id_product + 1;
@@ -75,15 +75,16 @@ function category_url_product($url_category)
 
 // $id = '1';
 // saveImg($url, $id);
-function saveImg($url, $id) {
+function saveImg($url, $id)
+{
   $img_name = preg_replace('/.*\//', '', $url);
-   
-  if (!is_dir('images/'.$id)) {
-    mkdir('images/'.$id, 0777, true);
+
+  if (!is_dir('images/' . $id)) {
+    mkdir('images/' . $id, 0777, true);
   }
 
   // Image path
-  $img_name_path = './images/'.$id.'/'.$img_name;
+  $img_name_path = './images/' . $id . '/' . $img_name;
 
   // Save image
   $ch = curl_init($url);
