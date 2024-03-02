@@ -33,7 +33,8 @@ git clone https://github.com/igor4949i/parselizer.git
 
 ## Known bugs
 
-==Warning:== count(): Parameter must be an array or an object that implements Countable in 
+
+<mark>Warning:</mark> count(): Parameter must be an array or an object that implements Countable in 
 
 Simple fix.
 [Check this comment](https://github.com/guzzle/guzzle/issues/1973#issuecomment-396278571)
