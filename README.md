@@ -29,8 +29,6 @@ git clone https://github.com/igor4949i/parselizer.git
 
 3. configure the required data for parsing
 
-4. run the server and open index.html
-
 ## Known bugs
 
 
