@@ -202,10 +202,10 @@ $(document).ready(function () {
 });
 
 
-$(document).ready(function () {
-  $.ajax({
-    url: './load_data_categories.php'
-  }).done(function (data) {
-    $("#exampleFormControlTextarea_cat").html(data);
-  });
-});
+// $(document).ready(function () {
+//   $.ajax({
+//     url: './load_data_categories.php'
+//   }).done(function (data) {
+//     $("#exampleFormControlTextarea_cat").html(data);
+//   });
+// });

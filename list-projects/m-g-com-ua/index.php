@@ -40,8 +40,6 @@ $writer->save('./Excel/test.xlsx');
 // Читання Excel та запис на HTML
 
 
-
-
 // $file = "Excel/All_desc_ru.xlsx"; // файл для получения данных
 // $excel = \PhpOffice\PhpSpreadsheet\IOFactory::load($file);; // подключить Excel-файл
 // $excel->setActiveSheetIndex(0); // получить данные из указанного листа

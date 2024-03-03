@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png" />
+  <link rel="stylesheet" href="style.css">
+  <title>Joma</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row info-row">
+      <div class="col-12">
+        <p>
+          <a href="http://joma.com.ua/footwear/2747" target="_blank">http://joma.com.ua/footwear/2747</a>
+          <a href="http://joma.com.ua/footwear/2747" target="_blank" class="badge badge-primary">Open in new tab</a>
+        </p>
+        <form>
+          <input type="text" name="parser" id="parser" placeholder="Enter URL category"
+            value="http://joma.com.ua/footwear/2747">
+          <div class="alert alert-danger form-input-error" role="alert"></div>
+          <button class="parselizer-button btn-success" id="data_submit_parselizer">
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="loading-button">Create table</span>
+          </button>
+          <button type="button" class="btn btn-link delete-table">Delete table</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row result-row">
+      <div class="col-12">
+        <h2>Result table</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped table-hover table-sm" id="table2excel">
+            <caption>Table is empty...</caption>
+            <thead class="thead-dark">
+              <tr>
+                <th class="number_product">№</th>
+                <th class="name_product">name_product</th>
+                <th class="price">price</th>
+                <!-- <th class="url">url</th> -->
+                <th class="sku">sku</th>
+                <!-- <th class="desc_full">desc_full</th> -->
+                <!-- <th class="category_breadcrumbs_last">category_last</th> -->
+                <th class="main_images_url">main image</th>
+                <!-- <th class="add_images_url">additional images</th> -->
+                <!-- <th class="characteristics">characteristics</th> -->
+                <th class="color">color</th>
+                <!-- <th class="size">size</th> -->
+                <!-- <th class="list_images_url">all_images</th> -->
+                <th class="category_list">category_list</th>
+                <th class="color_dot">color_dot_left</th>
+                <th class="color_dot">color_dot_right</th>
+                <!-- <th class="size_table">size_table</th> -->
+                <!-- <th class="size_table_2">size_table_2</th> -->
+                <!-- <th class="size_table_3">size_table_3</th> -->
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <button class="parselizer-button" id="data_create_excel">Download CSV</button>
+    <br><br><br>
+    <button class="parselizer-button btn btn-warning" id="data_submit_parselizer_compare">
+      <!-- <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> -->
+      <span class="loading-button">Create list name</span>
+    </button>
+    <div class="row result-row">
+      <div class="col-12">
+        <h2>Result table</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped table-hover table-sm" id="table2excel_xlsx">
+            <caption>Table is empty...</caption>
+            <thead class="thead-dark">
+              <tr>
+                <th class="name_product">name_product</th>
+                <!-- <th class="sku">sku</th> -->
+                <th class="desc_full">desc_full</th>
+                <th class="characteristics">except</th>
+
+                <!-- <th class="characteristics">gender</th> -->
+                <!-- <th class="characteristics">for_children</th> -->
+                <!-- <th class="characteristics">destination</th> -->
+
+                
+                <!-- <th class="url">url</th> -->
+                <!-- <th class="sku">sku</th> -->
+                <!-- <th class="category_list">category_list</th> -->
+                <!-- <th class="category_breadcrumbs_last">category_last</th> -->
+                <!-- <th class="main_images_url">main image</th> -->
+                <!-- <th class="add_images_url">additional images</th> -->
+                <!-- <th class="list_images_url">all images (Main + Additional)</th> -->
+                <!-- <th class="color">color</th> -->
+                <!-- <th class="color_dot">color_dot_left</th> -->
+                <!-- <th class="color_dot">color_dot_right</th> -->
+                <!-- <th class="size_table">size_table</th> -->
+                <!-- <th class="size_table_2">size_table_2</th> -->
+                <!-- <th class="size_table_3">size_table_3</th> -->
+                <!-- <th class="size">size</th> -->
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <button class="parselizer-button" id="data_create_excel_list">Download CSV</button>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="./jquery.table2excel.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

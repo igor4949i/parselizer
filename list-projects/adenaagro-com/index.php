@@ -41,102 +41,102 @@ for ($i = 1162; $i <= 1162; $i++) {
 	${'menu_' . $i} = ${'doc_' . $i}->find('select[name="__categoryid"] option[selected="selected"]')->attr('value');
 
 	switch (${'menu_' . $i}) {
-	case '0':
-		${'category_' . $i} = 'Немає';
-		${'category_child_' . $i} = '';
-		break;
-	case '2':
-		${'category_' . $i} = 'Техника Б/У';
-		${'category_child_' . $i} = '';
-		break;
-	case '10':
-		${'category_' . $i} = 'Техника Б/У';
-		${'category_child_' . $i} = 'Обработка почвы';
-		break;
-	case '11':
-		${'category_' . $i} = 'Техника Б/У';
-		${'category_child_' . $i} = 'Посадка, посев';
-		break;
-	case '13':
-		${'category_' . $i} = 'Техника Б/У';
-		${'category_child_' . $i} = 'Уборка';
-		break;
-	case '14':
-		${'category_' . $i} = 'Техника Б/У';
-		${'category_child_' . $i} = 'Складское оборудование';
-		break;
-	case '15':
-		${'category_' . $i} = 'Техника Б/У';
-		${'category_child_' . $i} = 'Упаковка';
-		break;
-	case '12':
-		${'category_' . $i} = 'Техника Б/У';
-		${'category_child_' . $i} = 'Приемные и горизонтальные конвейеры';
-		break;
-	case '1':
-		${'category_' . $i} = 'Новая техника';
-		${'category_child_' . $i} = '';
-		break;
-	case '4':
-		${'category_' . $i} = 'Новая техника';
-		${'category_child_' . $i} = 'Обработка почвы';
-		break;
-	case '5':
-		${'category_' . $i} = 'Новая техника';
-		${'category_child_' . $i} = 'Посадка, посев';
-		break;
-	case '7':
-		${'category_' . $i} = 'Новая техника';
-		${'category_child_' . $i} = 'Уборка';
-		break;
-	case '8':
-		${'category_' . $i} = 'Новая техника';
-		${'category_child_' . $i} = 'Складское оборудование';
-		break;
-	case '9':
-		${'category_' . $i} = 'Новая техника';
-		${'category_child_' . $i} = 'Упаковка';
-		break;
-	case '6':
-		${'category_' . $i} = 'Новая техника';
-		${'category_child_' . $i} = 'Приемные и горизонтальные конвейеры';
-		break;
-	case '3':
-		${'category_' . $i} = 'Запчасти';
-		${'category_child_' . $i} = '';
-		break;
-	case '32':
-		${'category_' . $i} = 'Запчасти';
-		${'category_child_' . $i} = 'Ролики';
-		break;
-	case '33':
-		${'category_' . $i} = 'Запчасти';
-		${'category_child_' . $i} = 'Звездочки';
-		break;
-	case '34':
-		${'category_' . $i} = 'Запчасти';
-		${'category_child_' . $i} = 'Транспортеры';
-		break;
-	case '35':
-		${'category_' . $i} = 'Запчасти';
-		${'category_child_' . $i} = 'Цепи';
-		break;
-	case '36':
-		${'category_' . $i} = 'Запчасти';
-		${'category_child_' . $i} = 'Другое';
-		break;
-	case '37':
-		${'category_' . $i} = 'Запчасти';
-		${'category_child_' . $i} = 'Ложечки';
-		break;
-	case '38':
-		${'category_' . $i} = 'Запчасти';
-		${'category_child_' . $i} = 'Мешкозашивочные машины';
-		break;
-	default:
-		${'category_' . $i} = '';
-		${'category_child_' . $i} = '';
-		break;
+		case '0':
+			${'category_' . $i} = 'Немає';
+			${'category_child_' . $i} = '';
+			break;
+		case '2':
+			${'category_' . $i} = 'Техника Б/У';
+			${'category_child_' . $i} = '';
+			break;
+		case '10':
+			${'category_' . $i} = 'Техника Б/У';
+			${'category_child_' . $i} = 'Обработка почвы';
+			break;
+		case '11':
+			${'category_' . $i} = 'Техника Б/У';
+			${'category_child_' . $i} = 'Посадка, посев';
+			break;
+		case '13':
+			${'category_' . $i} = 'Техника Б/У';
+			${'category_child_' . $i} = 'Уборка';
+			break;
+		case '14':
+			${'category_' . $i} = 'Техника Б/У';
+			${'category_child_' . $i} = 'Складское оборудование';
+			break;
+		case '15':
+			${'category_' . $i} = 'Техника Б/У';
+			${'category_child_' . $i} = 'Упаковка';
+			break;
+		case '12':
+			${'category_' . $i} = 'Техника Б/У';
+			${'category_child_' . $i} = 'Приемные и горизонтальные конвейеры';
+			break;
+		case '1':
+			${'category_' . $i} = 'Новая техника';
+			${'category_child_' . $i} = '';
+			break;
+		case '4':
+			${'category_' . $i} = 'Новая техника';
+			${'category_child_' . $i} = 'Обработка почвы';
+			break;
+		case '5':
+			${'category_' . $i} = 'Новая техника';
+			${'category_child_' . $i} = 'Посадка, посев';
+			break;
+		case '7':
+			${'category_' . $i} = 'Новая техника';
+			${'category_child_' . $i} = 'Уборка';
+			break;
+		case '8':
+			${'category_' . $i} = 'Новая техника';
+			${'category_child_' . $i} = 'Складское оборудование';
+			break;
+		case '9':
+			${'category_' . $i} = 'Новая техника';
+			${'category_child_' . $i} = 'Упаковка';
+			break;
+		case '6':
+			${'category_' . $i} = 'Новая техника';
+			${'category_child_' . $i} = 'Приемные и горизонтальные конвейеры';
+			break;
+		case '3':
+			${'category_' . $i} = 'Запчасти';
+			${'category_child_' . $i} = '';
+			break;
+		case '32':
+			${'category_' . $i} = 'Запчасти';
+			${'category_child_' . $i} = 'Ролики';
+			break;
+		case '33':
+			${'category_' . $i} = 'Запчасти';
+			${'category_child_' . $i} = 'Звездочки';
+			break;
+		case '34':
+			${'category_' . $i} = 'Запчасти';
+			${'category_child_' . $i} = 'Транспортеры';
+			break;
+		case '35':
+			${'category_' . $i} = 'Запчасти';
+			${'category_child_' . $i} = 'Цепи';
+			break;
+		case '36':
+			${'category_' . $i} = 'Запчасти';
+			${'category_child_' . $i} = 'Другое';
+			break;
+		case '37':
+			${'category_' . $i} = 'Запчасти';
+			${'category_child_' . $i} = 'Ложечки';
+			break;
+		case '38':
+			${'category_' . $i} = 'Запчасти';
+			${'category_child_' . $i} = 'Мешкозашивочные машины';
+			break;
+		default:
+			${'category_' . $i} = '';
+			${'category_child_' . $i} = '';
+			break;
 	}
 }
 echo $debug->debug('step 4 | Category/Category Child| Time: ' . (microtime(true) - $start) . ' секунд');

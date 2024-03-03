@@ -11,11 +11,67 @@
     </style>
 </head>
 <body>
-    <p>You need to change the file:</p>
-    <ul>
-        <li>.htaccess</li>
-        <li>configure php file</li>
-    </ul>
-    
-</body>
+    <div class="container">
+      <div class="row info-row">
+        <div class="col-12">
+          <p>
+            <a href="https://prom.ua/Monitory?a12171=119004&a11292=false&a10006=83770"
+              target="_blank">https://prom.ua/Monitory?a12171=119004&a11292=false&a10006=83770</a>
+            <a href="https://prom.ua/Monitory?a12171=119004&a11292=false&a10006=83770" target="_blank"
+              class="badge badge-primary">Open in new tab</a>
+          </p>
+          <form>
+            <input type="text" name="parser" id="parser" placeholder="Enter URL category"
+              value="https://prom.ua/Monitory?a12171=119004&a11292=false&a10006=83770">
+            <div class="alert alert-danger form-input-error" role="alert"></div>
+            <button class="parselizer-button" id="data_submit_parselizer">
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              <span class="loading-button">Create table</span>
+            </button>
+            <button type="button" class="btn btn-link delete-table">Delete table</button>
+          </form>
+        </div>
+      </div>
+  
+      <div class="row result-row">
+        <div class="col-12">
+          <h2>Result table</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover table-sm" id="table2excel">
+              <caption>Table is empty...</caption>
+              <thead class="thead-dark">
+                <tr>
+                  <th class="number_product">№</th>
+                  <th class="name_product">name_product</th>
+                  <th class="url">url</th>
+                  <th class="price">price</th>
+                  <!-- <th class="old_price">old_price</th> -->
+                  <!-- <th class="sku">sku</th> -->
+                  <!-- <th class="available">available</th> -->
+                  <!-- <th class="desc_full">desc_full</th> -->
+                  <!-- <th class="category_list">category_list</th> -->
+                  <!-- <th class="category_breadcrumbs_last">category_breadcrumbs_last</th> -->
+                  <!-- <th class="main_images_url">main image</th> -->
+                  <!-- <th class="add_images_url">additional images</th> -->
+                  <!-- <th class="list_images_url">all images (Main + Additional)</th> -->
+                  <!-- <th class="main_images_url">characteristics</th> -->
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+  
+  
+      <button class="parselizer-button" id="data_create_excel">Download CSV</button>
+  
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./jquery.table2excel.js"></script>
+    <script src="./main.js"></script>
+  </body>
 </html>
