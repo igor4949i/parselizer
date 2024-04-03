@@ -10,23 +10,6 @@ require('./phpQuery-onefile.php');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // get data from MAIN.JS -- $.post
 $url_category = $_POST['parser_data'];
 
