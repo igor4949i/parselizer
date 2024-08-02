@@ -2,7 +2,5 @@ composer.phar
 /vendor/
 /*/*/vendor/
 /credentials/
-/list-projects/ParserOLX
 /.idea
 /python
-/list-projects/generator-ua
