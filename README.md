@@ -6,10 +6,6 @@
 
 This is a tool for parsing sites.
 
-## Preview
-
-[Cilck to open the project preview on Github Page](https://igor4949i.github.io/parselizer/)
-
 ## Features
 - Uploading data to Google Sheets
 - Sending data to database (MySQL)
