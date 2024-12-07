@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <p><a href="https://planshetka.com.ua/g36091217-navesnoe-oborudovanie-motoblokam">https://planshetka.com.ua/g36091217-navesnoe-oborudovanie-motoblokam</a></p>
+  <form>
+    <input type="text" name="planshetka" id="planshetka" placeholder="Введіть URL товару" value="https://planshetka.com.ua/g36091217-navesnoe-oborudovanie-motoblokam">
+    <p class="form-input-error"></p>
+    <button class="parselizer-button" id="data_submit_parselizer">Створити таблицю</button>
+  </form>
+  
+  <h2>Result table</h2>
+  <table class="table table-bordered" id="table2excel">
+    <thead>
+      <tr>
+        <!-- <th class="number_product">№</th> -->
+        <!-- <th class="name_product">name_product</th> -->
+        <!-- <th class="url">url</th> -->
+        <!-- <th class="price">price</th> -->
+        <!-- <th class="old_price">old_price</th> -->
+        <!-- <th class="sku">sku</th> -->
+        <!-- <th class="available">available</th> -->
+        <th class="desc_full">desc_full</th>
+        <!-- <th class="images_url">images_url</th> -->
+        <!-- <th class="category_list">category_list</th> -->
+        <!-- <th class="category_breadcrumbs_last">category_breadcrumbs_last</th> -->
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  
+  <button class="parselizer-button" id="data_create_excel">Скачати CSV</button>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="jquery.table2excel.js"></script>
+  <script src="parselizer_prom_ua_template.js"></script>
+</body>
+</html>

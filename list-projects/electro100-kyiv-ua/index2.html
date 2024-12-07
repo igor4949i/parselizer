@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png" /> -->
+  <link rel="stylesheet" href="style.css">
+  <title>Sort Data</title>
+</head>
+
+<body>
+  <div class="container border addition_of_missing_values">
+    <div class="row info-row">
+      <div class="col-12">
+        <h2>addition_of_missing_values</h2>
+        Значення вхідних даних масив в якому є пусті значення. <br>
+        Вихідні дані: масив заповнюється значеннями з попереднього індексу arr[i] = arr[i-1] <br>
+        Потрібно для формування Аркуша <b>Додаткові фото OpenCart</b> - ID product<br>
+      </div>
+    </div>
+    <div class="row info-row">
+      <div class="col-12">
+        <form>
+          <input type="text" name="parser" id="parser" placeholder="Enter data" value="Enter data">
+          <div class="alert alert-danger form-input-error" role="alert"></div>
+          <button class="parselizer-button" id="data_submit_parselizer">
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="loading-button">Create table</span>
+          </button>
+          <button type="button" class="btn btn-link delete-table">Delete table</button>
+          <button class="parselizer-button" id="data_create_excel">Download CSV</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row result-row">
+      <div class="col-12">
+        <h2>Result table</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped table-hover table-sm" id="table2excel">
+            <caption>Table is empty...</caption>
+            <!-- <thead class="thead-dark">
+              <tr>
+                <th class="number_product"></th>
+                <th class="number_product"></th>
+              </tr>
+            </thead> -->
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="./jquery.table2excel.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

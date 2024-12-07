@@ -1,0 +1,6 @@
+composer.phar
+/vendor/
+/*/*/vendor/
+/credentials/
+/.idea
+/python

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/jpg" href="./imgs/favicon.png" />
+  <link rel="stylesheet" href="style.css">
+  <title>Rozetka</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row info-row">
+      <div class="col-12">
+        <p>
+          <a href="https://rozetka.com.ua/seller/ssshop/goods/"
+            target="_blank">https://rozetka.com.ua/seller/ssshop/goods/</a>
+          <a href="https://rozetka.com.ua/seller/ssshop/goods/" target="_blank" class="badge badge-primary">example link</a>
+        </p>
+        <form>
+          <input type="text" name="parser" id="parser" placeholder="Paste your URL"
+            value="">
+          <div class="alert alert-danger form-input-error" role="alert"></div>
+          <button class="btn btn-warning mr-3" id="data_submit_parselizer">
+            <!-- <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> -->
+            <span class="loading-button">Create XML</span>
+          </button>
+          <!-- <button type="button" class=" btn btn-success mr-3" id="data_copy">Копировать XML</button> -->
+          <!-- <button type="button" class="btn btn-link delete-table">Очистить поле XML</button> -->
+        </form>
+      </div>
+    </div>
+
+    <!-- <div class="row result-row">
+      <div class="col-12">
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped table-hover table-sm" id="table2excel">
+            <tbody>
+              <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
+                  placeholder="Создайте XML ..."></textarea>
+              </div>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <button class="parselizer-button" id="data_create_excel">Download CSV</button> -->
+
+  </div>
+
+  <div class="container">
+    <!-- <div class="row info-row">
+      <div class="col-12">
+        <form>
+          <button type="button" class=" btn btn-success mr-3" id="data_copy_cat">Копировать XML categories</button>
+          <button type="button" class="btn btn-link delete-table-cat">Очистить поле XML categories</button>
+          <button type="button" class="btn btn-danger" id="delete-file-categories">Удалить категории с файла Categories.txt</button>
+        </form>
+      </div>
+    </div> -->
+
+    <!-- <div class="row result-row">
+      <div class="col-12">
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped table-hover table-sm" id="table2excel_cat">
+            <tbody>
+              <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea_cat" rows="8"
+                  placeholder="Файл XML categories пустой ..."></textarea>
+              </div>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="row result-row">
+            <div class="col-12">
+                <h2>Result</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover table-sm" id="table2excel">
+                        <!-- <caption>Table is empty...</caption>
+                        <thead class="thead-dark">
+                            <tr>
+                                <th class="meta_title">title</th>
+                                <th class="id">id</th>
+                                <th class="desc">desc</th>
+                            </tr>
+                        </thead> -->
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="./jquery.table2excel.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
